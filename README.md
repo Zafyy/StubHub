@@ -4,7 +4,7 @@
 
 **Avoiding Blocks:** To prevent being detected as a bot, I added a fake User-Agent to the middleware, making the requests appear more like real browser traffic.
 
-**Respecting Server Limits:** To avoid overwhelming the website, a small delay of 2 seconds was added between requests using Scrapy’s DOWNLOAD_DELAY setting.
+**Respecting Server Limits:** To avoid overwhelming the website, a small delay of 5 seconds was added between requests using Scrapy’s DOWNLOAD_DELAY setting.
 
 **Handling Pagination:** Since events were spread across multiple pages, I implemented logic to track page numbers and continue requesting additional pages until all data was collected.
 
